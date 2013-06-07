@@ -1,0 +1,146 @@
+<!-- MIU
+ Term 1306
+ Banchop Ben Kangdouangnhot
+ Project 1 -->
+<!doctype html>  
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	
+	<title>Ticket Hub</title>
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+	
+	<!-- StyleSheets under here -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+
+</head>
+<body>
+
+	<!-- First Page -->
+	<div data-role="page" id="home">
+		
+		<div data-role="header" data-position="fixed" data-theme="b" >
+			<h1>Ticket Hub</h1>
+		</div>
+		
+		<div data-role="content">
+		<br>
+		<div>
+			<a href="#"> <!-- adding achor tags 'link' -->
+						<img src="images/sport.png" align="middle"/> <!-- adding image -->
+							<a href="#favorite" align="middle">
+					 <p>Specials Deals for today!</p>	
+				</a>
+			</a>
+		</div>
+		</br>
+			<ul data-role="listview"> <!-- List View and data-filter smart search-->
+			
+     		<input type="text" name="text1" id="text1" value="enter here...">
+			<p><a href="#favorite" data-role="button" data-icon="search" data-iconpos="right" data-ajax="false" data-theme="d" >Search</a></p>
+				<li data-role="list-divider">BROWSE NOW</li> <!-- Dividers -->
+				<li><a href="#favorite">	<!-- adding header and lower textview w/buttons-->
+					<h3>Shop Tickets</h3>
+					 <p>We have all tickets at discounted prices!</p>
+				</a></li>
+				<li><a href="#favorite">
+					<h3>Sport Stuff</h3>
+					 <p>find all the greatest apparels</p> 
+				<li><a href="#favorite">
+					<h3>Sports News</h3>
+					 <p>Up to the minute sports news</p>
+				</a></li> 
+				<li><a href="#favorite">
+					<h3>Feeds</h3>
+					 <p>get up to date</p>
+				</a></li> 
+					
+				</a></li> 
+				<li data-role="list-divider">Links To Popular Sports!</li> <!-- Dividers -->
+				<li><a href="#favorite">
+					<h3>NFL</h3>
+					 <p>Get your Football news</p>
+				</a></li> 
+				<li><a href="#favorite">
+					<h3>NBA</h3>
+					 <p>Get your Basket ball news</p>
+				</a></li> 
+				<li><a href="#favorite">
+					<h3>NHL</h3>
+					 <p>Get your Hockey news</p>
+				</a></li> 
+					<li><a href="#favorite">
+					<h3>AND MORE!</h3>
+				</a></li> 
+				<li data-role="list-divider">Click Link!</li> <!-- Dividers -->
+			</ul>
+		   
+ 			<p><a href="additem.html" data-role="button" data-icon="arrow-r" data-iconpos="right" data-ajax="false" >Sign up now!</a></p> <!-- data-role="button" to add a button --> 
+	    </div>
+		
+		<div data-role="footer" data-position="fixed" data-theme="c" >
+			<h4>ticket Hub</h4>	
+		</div>
+			
+	</div>
+
+		<!-- FOOTER -->
+		<div data-role="footer" data-position="fixed" data-id="nfl" data-theme="b" >	
+	   </div> 
+	   
+	</div>
+	
+
+	<!-- Error -->	
+	<div data-role="page" id="error"  data-position="fixed">	
+		<div data-role="header" data-position="fixed">
+			<h1>ERROR!</h1>
+		</div>
+		
+		<div data-role="content">
+			<p>Sorry, refresh and try again later!</p>
+		</div>
+
+	   
+	</div>
+	
+	<div data-role="page" id="favorite" data-id="displayingData" data-add-back-btn="true"> 
+		
+		<div data-role="header" data-position="fixed" data-theme="b" >
+			<h1>Ticket Hub</h1>
+		</div>
+		
+		<div data-role="content">
+			<p>Sorry, an error has occur!</p>
+		</div>
+		
+		
+		<div data-role="footer" data-id="nfl">
+			<div data-role="navbar"> 		  
+			</div>	
+	   </div> 
+	   
+	</div>
+	
+
+	</div>
+
+	<!-- JavaScript under here -->
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+
+
+</body>
+</html>
